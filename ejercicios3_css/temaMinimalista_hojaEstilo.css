@@ -1,0 +1,21 @@
+
+
+#enlaceUno{
+    color:blue;
+}
+
+#enlaceDos{
+    color:blue;
+}
+
+#parrafoDosUno{
+    visibility:hidden;
+}
+
+#parrafoDosDos{
+    visibility:hidden;
+}
+
+#parrafoTres{
+    margin-top:-70px;
+}

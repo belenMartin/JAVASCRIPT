@@ -1,0 +1,58 @@
+
+
+#enlaceUno{
+    font-weight:bold;
+    color:blue;
+    text-decoration:none;
+}
+
+#enlaceDos{
+    font-weight:bold;
+    color:blue;
+    text-decoration:none;
+}
+
+#enlaces {
+    background-color:skyblue;
+    border-right:3px solid blue;
+    border-bottom:3px solid blue;
+}
+
+#titulo{
+    color:darkblue;
+}
+
+#parrafoUno{
+    text-align:justify;
+}
+
+#parrafoDos{
+    text-align:justify;
+}
+
+#parrafoDosDos{
+    font-weight:bold;
+    margin-top:-15px;
+}
+
+#parrafoTres{
+    background-color:yellow;
+    border:1px solid black;
+}
+
+#margenIzquierdo{
+   background-color:skyblue;
+   margin-left:-43px;
+   margin-top:-15px;
+   width:80px;
+   height:600px;
+}
+
+#contenido{
+    margin-top:-595px;
+    margin-left:10px;
+}
+
+#cuerpo{
+    background-color:lightyellow;
+}
