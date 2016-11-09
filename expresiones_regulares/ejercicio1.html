@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Ejercicio1</title>        
+    </head>
+    
+    <body>
+        
+        <h1>Registration Form</h1>
+        
+        <form>
+            <label>User id&#58;</label>
+            <input id="usuario" type="text" size="12" style="margin-left:15px;" onchange="user()"><p id="reqUs" style="margin-top:-20px;margin-left:200px;color:red;">*</p>
+            <br><br>
+            <label>Password&#58;</label>
+            <input  id="password" type="password" size="12" onchange="passwd()"><p id="reqPas" style="margin-top:-20px;margin-left:200px;color:red;">*</p>
+            <br><br>
+            <label>Name&#58;</label>
+            <input id="nombre" type="text" size="20" style="margin-left:25px;" onchange="nameUser()"><p id="reqNom" style="margin-top:-20px;margin-left:255px;color:red;">*</p>
+            <br><br>
+            <label>Address&#58;</label>
+            <input id="direccion" type="text" size="20" style="margin-left:10px;">
+            <br><br>
+            <label>Country&#58;</label>
+            <select style="margin-left:10px;" onchange="pais()">
+                <option selected>&#40;Please select a country&#41;</option>
+                <option id="uno">Spain</option>
+                <option id="dos">France</option>
+                <option id="tres">England</option>
+                <option id="cuatro">United States</option>
+            </select><p id="reqPais" style="margin-top:-20px;margin-left:255px;color:red;">*</p>
+            <br><br>
+            <label>ZIP Code&#58;</label>
+            <input id="codigoPostal" type="text" size ="15" onchange="zipPostal()"><p id="reqZip" style="margin-top:-20px;margin-left:255px;color:red;">*</p>
+            <br><br>
+            <label>Email&#58;</label>
+            <input id="email" type="text" size="20" style="margin-left:25px;" onchange="correoElectronico()"><p id="reqEmail" style="margin-top:-20px;margin-left:255px;color:red;">*</p>
+            <br><br>
+            <label>Sex&#58;</label>
+            <input id="m" type="radio" name="sex" style="margin-left:40px;" onchange="sexo()">Male
+            <input id="f" type="radio" name="sex" onchange="sexo()">Female<p id="reqSexo" style="margin-top:-20px;margin-left:255px;color:red;">*</p>
+            <br><br>
+            <label>Language&#58;</label>
+            <input id="english" type="checkbox" onchange="language()" checked>English
+            <input id="noEnglish" type="checkbox">Non English<p id="reqIdioma" style="margin-top:-20px;margin-left:258px;color:red;">*</p>
+            <br><br>
+            <label>About&#58;</label>
+            <textarea cols="45" rows="15" style="margin-left:30px;"></textarea>
+            <br><br>
+            <input type="button" value="Submit" style="margin-left:155px;">            
+        </form>
+       
+        <script type="text/javascript" src="ejercicio1.js"></script>
+        
+    </body>
+</html>
