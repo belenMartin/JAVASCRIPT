@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Prueba SVG</title>
+    </head>
+    
+    <body id="cuerpo">
+        
+        <script type="text/javascript">
+            
+       var svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
+       var circulo = document.createElementNS("http://www.w3.org/2000/svg","circle");
+       circulo.setAttribute("cx","50");
+       circulo.setAttribute("cy","50");
+       circulo.setAttribute("r","50");
+       circulo.setAttribute("stroke","0.5");
+       circulo.setAttribute("strokeWidth","0.5");
+       circulo.setAttribute("fill","lightgreen");
+       svg.setAttribute("width","800");
+       svg.setAttribute("height","600");
+       circulo.setAttribute("id","circulo");
+       svg.appendChild(circulo);       
+       document.getElementById("cuerpo").appendChild(svg);           
+            
+        </script>        
+        
+    </body>
+</html>
