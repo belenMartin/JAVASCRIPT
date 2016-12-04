@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>MVC</title>
+    </head>
+    
+    <body id="fondos">
+        <div id="cuerpo"></div>
+        <div id="notasAdhesivas"></div>
+       
+        <script type="text/javascript">
+            function modelo(){
+                var datos = document.getElementById("datos").value;
+                return datos;
+            }
+            
+            function vista1(){
+                document.getElementById("fondos").style.backgroundImage = "url(\"cork.jpg\")";
+            }
+            
+            function vista2(){
+                document.getElementById("fondos").style.backgroundImage = "url(\"flower.jpg\")";
+            }
+            
+            
+            function vista(){
+                
+                var fondo1 = document.createElement("a");
+                fondo1.setAttribute("href","javascript:vista1();");
+                var texto1 = document.createTextNode("Fondo de cork");
+                fondo1.appendChild(texto1);
+                document.getElementById("cuerpo").appendChild(fondo1);                                
+                
+                document.getElementById("cuerpo").innerHTML += "&nbsp;&nbsp;";
+                
+                var fondo2 = document.createElement("a");
+                fondo2.setAttribute("href","javascript:vista2();");
+                var texto2 = document.createTextNode("Fondo de flower");
+                fondo2.appendChild(texto2);
+                document.getElementById("cuerpo").appendChild(fondo2);
+                
+                document.getElementById("cuerpo").innerHTML += "<br>";
+                
+                var nota = document.createElement("textarea");
+                nota.setAttribute("rows","10");
+                nota.setAttribute("cols","50");
+                nota.setAttribute("id","datos");
+                document.getElementById("cuerpo").appendChild(nota);
+                
+                var botonCrear = document.createElement("input");
+                botonCrear.setAttribute("type","button");
+                botonCrear.setAttribute("value","Create Nota");
+                botonCrear.setAttribute("id","crear");
+                document.getElementById("cuerpo").appendChild(botonCrear);
+                
+                var botonEliminar = document.createElement("input");
+                botonEliminar.setAttribute("type","button");
+                botonEliminar.setAttribute("value","Eliminar Nota");
+                botonEliminar.setAttribute("id","eliminar");
+                document.getElementById("cuerpo").appendChild(botonEliminar);                               
+            }                        
+            
+            function controlador(){
+                vista();
+                var contador = 0;
+                document.getElementById("crear").addEventListener("click",function(){
+                   var misNotas = document.getElementById("notasAdhesivas");
+                   var fecha = new Date();
+                   var nota = document.createElement("div");
+                   nota.setAttribute("id","iabc");
+                   misNotas.appendChild(nota);
+                   document.getElementById("iabc").style.width = "300";
+                   document.getElementById("iabc").style.height = "300";
+                   document.getElementById("iabc").style.backgroundColor = "yellow";
+                   document.getElementById("iabc").style.marginLeft = contador++;
+                   document.getElementById("iabc").innerHTML = "Nota numero "+(contador++)+": <blockquote><br>"+modelo()+"<br>Fecha creación: "+fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getFullYear()+" - "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds()+"</blockquote>";
+                });
+                
+                document.getElementById("eliminar").addEventListener("click",function(){
+                    var misNotas = document.getElementById("notasAdhesivas");
+                    misNotas.removeChild(document.getElementById("iabc"));
+                });
+            }
+            
+            controlador();
+                
+        </script>
+    </body>
+</html>
