@@ -1,0 +1,13 @@
+<listaCorreo>
+    <correo>
+        <remitente>Kate</remitente>
+        <destinatario>Jasmine</destinatario>
+        <asunto>Esta es la tarea de hoy</asunto>
+    </correo>
+
+    <correo>
+        <remitente>John</remitente>
+        <destinatario>Sue</destinatario>
+        <asunto>Este es el trabajo de hoy</asunto>
+    </correo>
+</listaCorreo>

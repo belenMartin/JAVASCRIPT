@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Ejercicio1_3</title>
+    </head>
+    
+    <body>
+        <h1>Enviando par&aacute;metros al servidor</h1>
+        
+        <form action="ejercicio1_1.php" method="get">
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha de nacimiento">
+            <input type="text" id="codigoPostal" name="codigoPostal" placeholder="Codigo postal">
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+
+            <input type="button" value="validarDatos" onclick="enviaParametros()">
+        </form>        
+
+        <div id="salida"></div>
+        
+        <script type="text/javascript" src="ejercicio1_3.js"></script>
+    </body>
+</html>
