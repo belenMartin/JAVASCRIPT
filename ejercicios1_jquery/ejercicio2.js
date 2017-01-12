@@ -1,0 +1,1 @@
+$("#oculta").click(function(){$("#oculta").hide();});

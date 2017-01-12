@@ -1,0 +1,1 @@
+$("#oculta").click(function(){$(".intro").hide();});

@@ -1,0 +1,1 @@
+$("#oculta").click(function(){$("ol li:first-child").hide();});
