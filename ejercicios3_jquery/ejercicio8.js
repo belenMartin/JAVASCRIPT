@@ -1,0 +1,11 @@
+$("#boton").click(function(){
+    $("#uno").fadeOut("slow",function(){
+        $("#dos").fadeOut("fast",function(){
+            $("#tres").fadeOut(800,function(){
+                $("#cuatro").fadeOut(2000,function(){
+                    $("#cinco").fadeOut(4000)
+                    ;})
+                ;})
+            ;})
+    ;});
+;});
