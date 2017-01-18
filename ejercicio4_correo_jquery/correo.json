@@ -1,0 +1,21 @@
+{
+    "correo1":
+            {
+                "remitente":"Kate",
+                "destinatario":"Jasmine",
+                "asunto":"esta es la tarea de hoy"
+            },
+            
+    "correo2":
+            {
+                "remitente":"John",
+                "destinatario":"Sue",
+                "asunto":"esta es el trabajo de hoy"
+            },
+    "correo3":
+            {
+                "remitente":"Mab",
+                "destinatario":"Sar",
+                "asunto":"esta es el trabajo del dia de hoy"
+            }
+}
