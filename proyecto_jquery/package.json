@@ -1,0 +1,27 @@
+{
+  "name": "proyecto_jquery",
+  "version": "1.0.0",
+  "description": "hecho con la api de IMDB o OMDB",
+  "main": "project_jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belenMartin/JAVASCRIPT.git"
+  },
+  "keywords": [
+    "libreria",
+    "jquery"
+  ],
+  "author": "Maria Belen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belenMartin/JAVASCRIPT/issues"
+  },
+  "homepage": "https://github.com/belenMartin/JAVASCRIPT#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
