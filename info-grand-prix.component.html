@@ -1,0 +1,8 @@
+<div *ngFor="let result of resultado">
+<div *ngIf="_grandPrix == result.circuitId">
+<br><br>
+<a routerLink="/">F1</a>&nbsp;&nbsp;&nbsp;<a routerLink="/races">Races</a>&nbsp;&nbsp;&nbsp;<a [routerLink]="['/races',result.circuitId]">Info Grand Prix</a>
+<p [@flyInOut]="in"><br><b>{{result.Location.country}} Grand Prix</b><br><b>Country: </b>{{result.Location.country}}<br><b>Location: </b>{{result.Location.locality}}<br><b>Full Report: </b><a href="{{result.url}}" target="_blank">url</a><br></p>
+
+</div>
+</div>

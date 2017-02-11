@@ -1,0 +1,8 @@
+<div *ngFor="let result of resultado">    
+ <div *ngIf="result.familyName == _infoDriver">
+<br><br>
+<a routerLink="/">F1</a>&nbsp;&nbsp;&nbsp;<a routerLink="/drivers">Drivers</a>&nbsp;&nbsp;&nbsp;<a [routerLink]="['/drivers',result.familyName]">Info Driver</a>
+<p [@flyInOut]="in"><br><b>{{result.givenName}} {{result.familyName}}</b><br><b>Nationality: </b>{{result.nationality}}<br><b>Birth: </b>{{result.dateOfBirth}}<br><b>Biography: </b><a href="{{result.url}}" target="_blank">url</a></p>
+<router-outlet></router-outlet>
+</div>
+</div>

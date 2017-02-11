@@ -1,0 +1,12 @@
+<div id="caja" style="height:768px;" [@flyInOut]="in">
+<br>
+<input type="text" placeholder="Buscar..." style="margin-left:1099px;" [(ngModel)]="buscar">
+<br>
+<a routerLinkActive="active" [routerLink]="['/drivers']">Drivers</a>&nbsp;&nbsp;&nbsp;
+<a routerLinkActive="active" [routerLink]="['/pitStops']">Pit Stops</a>&nbsp;&nbsp;&nbsp;
+<a routerLinkActive="active" [routerLink]="['/races']">Races</a>&nbsp;&nbsp;&nbsp;
+<app-cambia-estilo></app-cambia-estilo>
+<router-outlet></router-outlet>
+
+<app-pie></app-pie>
+</div>

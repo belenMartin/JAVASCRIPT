@@ -1,0 +1,22 @@
+<br><br>
+<a routerLink="/">F1</a>&nbsp;&nbsp;&nbsp;<a routerLink="/races">Races</a>
+
+<br>
+<br>
+
+<table [@flyInOut]="in">
+  <caption><b>Race Calendar - 2013</b></caption>
+  <tr>
+   <th>Round</th>
+   <th>Grand Prix</th>
+   <th>Circuit</th>
+   <th>Date</th>
+  </tr>
+  <tr *ngFor="let rY of raceYear">
+    <td><b>{{rY.round}}</b></td>
+    <td><a [routerLink]="['/races', rY.Circuit.circuitId]">{{rY.raceName}}</a><router-outlet></router-outlet></td>
+    <td><a [routerLink]="['/races', rY.Circuit.circuitId]">{{rY.Circuit.circuitName}}</a><router-outlet></router-outlet></td>
+    <td>{{rY.date}}</td>
+    <td></td>
+  </tr>
+</table>

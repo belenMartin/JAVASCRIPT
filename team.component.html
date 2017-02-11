@@ -1,0 +1,16 @@
+<br><br>
+<a routerLink="/">F1</a>&nbsp;&nbsp;&nbsp;<a routerLink="/pitStops">Pit Stops</a>
+
+<br>
+<br>
+
+<table [@flyInOut]="in">
+  <caption><b>Pit Stops F1</b></caption>
+  <tr *ngFor="let cs of constStand">
+      <td><b>{{cs.round}}</b></td>
+      <td>{{cs.raceName}}</td>
+      <td><a href="{{cs.url}}" target="_blank">url</a></td>
+      <td>{{cs.Circuit.date}}</td>
+      <td>{{cs.Circuit.time}}</td>
+  </tr>
+</table>

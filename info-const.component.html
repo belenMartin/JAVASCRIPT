@@ -1,0 +1,9 @@
+<div *ngFor="let result of resultado">
+<div *ngIf="result.name == _infoConst">
+<br><br>
+<a routerLink="/">F1</a>&nbsp;&nbsp;&nbsp;<a routerLink="/drivers">Drivers</a>&nbsp;&nbsp;&nbsp;<a [routerLink]="['/drivers',result.name]">Info Constructor</a>
+<p [@flyInOut]="in"><br><b>{{result.name}}</b><br><b>Nationality: </b>{{result.nationality}}<br><b>History: </b><a href="{{result.url}}" target="_blank">url</a></p>
+</div>
+</div>
+<router-outlet></router-outlet>
+
